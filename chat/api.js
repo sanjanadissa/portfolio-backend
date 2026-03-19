@@ -41,7 +41,7 @@ export async function POST(req){
          context = matches.map(m => m.metadata.text).join("\n");
         
        } catch (error) {
-        console.error("RAG error (continuing without context):", err.message);
+        console.error("RAG error (continuing without context):", error.message);
        }
 
        let memoryText = "";
@@ -50,7 +50,7 @@ export async function POST(req){
         memoryText = recent.join("\n");
         
        } catch (error) {
-        console.error("RAG error (continuing without memory):", err.message);
+        console.error("RAG error (continuing without memory):", error.message);
 
        }
 
