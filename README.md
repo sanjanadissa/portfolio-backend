@@ -165,29 +165,6 @@ http://localhost:3001
 
 ---
 
-## 🔁 API Endpoint
-
-### POST `/api/chat`
-
-**Request:**
-
-```json
-{
-  "sessionId": "user123",
-  "message": "Tell me about Sanjana's projects"
-}
-```
-
-**Response:**
-
-```json
-{
-  "reply": "..."
-}
-```
-
----
-
 ## 📚 Data Indexing
 
 ### 🔹 Index Resume (PDF → Vector DB)
@@ -212,15 +189,6 @@ node scripts/indexGithub.js
   * Environment variables
   * Cron jobs (for GitHub re-indexing)
   * Scalable backend deployment
-
----
-
-## 🧪 Future Improvements
-
-* Streaming responses (real-time typing)
-* Better chunking strategies
-* Multi-user long-term memory
-* Admin dashboard for knowledge updates
 
 ---
 
